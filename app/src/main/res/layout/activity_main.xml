@@ -9,6 +9,13 @@
 
 <!--    회원가입 등 텍스트를 사용자가 쓸 수 있는 뷰 _ EditText-->
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/jordan_logo"
+        android:scaleType="centerCrop"/>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,14 +36,13 @@
                 android:layout_height="wrap_content"
                 android:text="비밀번호"
 />
-
-                <EditText
+            <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="비밀번호를 입력하세요"
                     android:inputType="textPassword"
 />
-                    <TextView
+            <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="자기 소개를 한줄로 입력하세요"
@@ -48,6 +54,28 @@
         android:layout_height="wrap_content"
         android:checked="true"
         android:text="자동 로그인" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="푸쉬알림"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="사용자 모드"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리자 모드"/>
+
+
 
 
                         <Button
