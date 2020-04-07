@@ -19,11 +19,31 @@ class MainActivity : AppCompatActivity() {
 
           Log.d("로그인버튼", "버튼 클릭됨")
 
-//            입력한 아이디는 ? 입니다
-            val formattedStr = "입력한 아이디는 ${inputEmail}입니다."
+            when (inputEmail){
+                "admin@naver.com" -> {Toast.makeText(this,"관리자입니다", Toast.LENGTH_SHORT).show()}
+                    "student" -> {Toast.makeText(this,"학생입니다", Toast.LENGTH_SHORT).show()}
+                "parent" -> {Toast.makeText(this,"부모입니다", Toast.LENGTH_SHORT).show()}
+                "teacher" -> {Toast.makeText(this,"선생입니다", Toast.LENGTH_SHORT).show()}
+                else -> {
+                    val formattedMsg = "입력한 아이디는 ${inputEmail}입니다."
+                    Toast.makeText(this,formattedMsg, Toast.LENGTH_SHORT).show()
+                }
+            }
 
-            Toast.makeText(this, inputEmail, Toast.LENGTH_SHORT).show()
 
+
+//            입력한 아이디가 admin@naver.com 이면, 관리자 입니다 토스트
+//            student 이면 학생입니다 / parent 학부모 / teacher 학생
+//            그외에는  입력한 아이디는 ? 입니다
+
+//            if (inputEmail == "admin@naver.com"){
+//                Toast.makeText(this,"관리자입니다", Toast.LENGTH_SHORT).show()
+//            }
+//
+//            val formattedStr = "입력한 아이디는 ${inputEmail}입니다."
+//
+//            Toast.makeText(this, formattedStr, Toast.LENGTH_SHORT).show()
+//
 
     }
 
