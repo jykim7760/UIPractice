@@ -15,9 +15,13 @@ class MainActivity : AppCompatActivity() {
         loginBtn.setOnClickListener {
 //        로그인버튼이 눌리면 할일 지정
 
+            val inputEmail = emailEdt.text.toString()
+
           Log.d("로그인버튼", "버튼 클릭됨")
 
-            Toast.makeText(this, "버튼눌려쪙", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "inputEmail", Toast.LENGTH_SHORT).show()
+
+
     }
 
 //        break 깨고 나오다
